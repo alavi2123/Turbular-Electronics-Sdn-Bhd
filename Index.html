@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <script>
+
+// Accordion
+function myAccFunc() {
+    
+    } </script>
+
+
+
+    <title> Turbular Electronics Sdn Bhd</title>
+    <meta charset="utf-8" />
+
+    <link href="Main.css" rel="stylesheet" type="text/css" media="all"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .w3-sidenav a {
+            font-family: "Roboto", sans-serif;
+        }
+
+        body, h1, h2, h3, h4, h5, h6, .w3-wide {
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
+    <body class="w3-content" style="max-width:1200px">
+
+</head>
+
+
+<body>
+
+    <!----Sidenav/menu -->
+
+    <nav class="w3-sidenav w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidenav">
+        <div class="w3-container w3-padding-16">
+            <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-closebtn w3-hover-text-red"></i>
+            <a href="Index.html"><h3 class="w3-wide"><b>Turbular Electronics</b></h3></a>
+        </div>
+        <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+            <a href="About Us.html">About Us</a>
+           
+            <a onclick="document.getElementById('demoAcc').style.display = 'block';" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+                Products <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAcc" class="w3-bar-block w3-padding-large w3-medium" style="display: none;">
+                <a href="MobilePhone(Sub).html" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Mobile Phones</a>
+                <a href="Laptops(product sub).html" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Laptops</a>
+                <a href="Cameras.html" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Cameras</a>
+                <a href="Televisions.html" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Televisions</a>
+                <a href="Consoles.html" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Gaming Consoles </a>
+            
+            </div>
+
+            <a href="Sale.html">Sale</a>
+            <a href="Customer Service.html">Customer Service</a>
+            
+            
+        </div>
+        <a href="#footer" class="w3-padding">Contact</a>
+        <a href="javascript:void(0)" class="w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
+        <a href="#footer" class="w3-padding">Social Media</a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding-24">
+        <span class="w3-left w3-wide"> Turbular Electronics</span>
+        <a href="javascript:void(0)" class="w3-right w3-opennav" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+
+    <!-- Overlay effect when opening sidenav on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Top header -->
+        <header class="w3-container w3-xlarge">
+            <p class="w3-left"> Turbular Electronics</p>
+            <p class="w3-right">
+                <i class="fa fa-shopping-cart w3-margin-right"></i>
+                <i class="fa fa-search"></i>
+            </p>
+        </header>
+
+        <!-- Image header -->
+        <div class="w3-display-container w3-container">
+            <img src="Images/e.jpg">
+            <div class="w3-display-topleft w3-padding-xxlarge w3-text-white">
+                
+                <h1 class="w3-hide-small">SUMMER SALE 2017!</h1> 
+               
+                <p style="align-self"><a href="Sale.html" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW </a></p>
+            </div>
+        </div>
+
+        <div class="w3-container w3-text-grey" id="products">
+            <p> Most Selling Items </p>
+        </div>
+
+
+        <!-- Product grid -->
+
+        <div class="w3-row">
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <img src="Images/iphone 7 (transparent.png" style="width:100%">
+                    <p>Iphone 7<br><b>RM 5090.00</b></p>
+                </div>
+                <div class="w3-container">
+                    <img src="Images/uhd tv.png" style="width:100%">
+                    <p>Samsung UHD TV<br><b>RM 8999.99</b></p>
+                </div>
+            </div>
+
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                        <img src="Images/Macbook pro transparent.png" style="width:100%">
+                        <span class="w3-tag w3-display-topleft">New</span>
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="w3-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <p>Macbook Pro 2016<br><b>RM 8000.50</b></p>
+                </div>
+                <div class="w3-container">
+                    <img src="Images/Sony Camera.png" style="width:100%">
+                    <p> Sony A7r Mark ii<br><b>RM 7000.00</b></p>
+                </div>
+            </div>
+
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <img src="Images/Playstation 4.png" style="width:100%">
+                    <p>Playstation 4 <br><b>RM 1150.00</b></p>
+                </div>
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                        <img src="Images/HERO5_Session_315.png" style="width:100%">
+                        <span class="w3-tag w3-display-topleft">Sale</span>
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="w3-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <p>Gopro Hero Session<br><b class="w3-text-red">RM 1800</b></p>
+                </div>
+            </div>
+
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <img src="Images/Hero5-Black-Carousel-1.png" style="width:100%">
+                    <p> Go Pro Hero 5 Black <br><b>RM 1800</b></p>
+                </div>
+                <div class="w3-container">
+                    <img src="/w3images/jeans1.jpg" style="width:100%">
+                    <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+                </div>
+            </div>
+        </div>
+      
+        <!-- Newsletter Modal -->
+
+        <div id="newsletter" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom w3-padding-jumbo">
+                <div class="w3-container w3-white w3-center">
+                    <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+                    <h2 class="w3-wide">NEWSLETTER</h2>
+                    <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+                    <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
